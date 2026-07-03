@@ -1,0 +1,15 @@
+flowchart LR
+    subgraph Desk[昇降デスク]
+        WorkMonitors[24インチ x 2\n仕事用ディスプレイ]
+        M60[EDIFIER M60\n既存スピーカー]
+        HiddenDisplay[ゲーム用ディスプレイ\n机下収納]
+    end
+
+    subgraph Shelf[机横の棚]
+        PS2[PS2]
+    end
+
+    PC[PC] --> M60
+    PS2 --> Upscaler[HDMI変換 / アップスケーラー]
+    Upscaler --> HiddenDisplay
+    HiddenDisplay --> M60
